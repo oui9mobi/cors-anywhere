@@ -869,7 +869,7 @@ describe('requireHeader', function() {
     request(cors_anywhere)
       .get('/example.com/')
       .expect('Access-Control-Allow-Origin', '*')
-      .expect(400, 'Missing required request header. Must specify one of: origin,x-requested-with', done);
+      .expect(400, '(JAWALTV PROXY ⚠ : Missing required request header. Must specify one of: origin,x-requested-with', done);
   });
 
   it('GET /example.com with X-Requested-With header', function(done) {
